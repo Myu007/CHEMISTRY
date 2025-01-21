@@ -1,0 +1,185 @@
+/* Reset some defaults for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+}
+
+/* Background color for body */
+body {
+  background: #faf8f8;
+}
+
+/* Container for the app */
+.app {
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  padding: 30px;
+  background-color: #fff; /* Clean white background for content area */
+  border-radius: 8px; /* Smooth rounded corners for modern look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main header styling */
+.app h1 {
+  font-size: 29px;
+  color: #00040a; /* Deep color for the header */
+  font-weight: 600;
+  padding-bottom: 26px;
+  text-align: center;
+}
+
+/* Quiz section styling */
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Button styling */
+.btn {
+  background: #fff;
+  color: #050505;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 12px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer; /* Ensures buttons are clickable */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.btn:hover:not([disabled]) {
+  background: #6bc7f1;
+  color: #fff;
+  transform: translateY(-2px); /* Slight lifting effect on hover */
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+#back-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px 80px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Correct answer styling */
+.correct {
+  background: #04e063; /* Green background for correct answers */
+  color: white;
+  font-weight: 500;
+  cursor: not-allowed; /* Prevent further clicks */
+  transform: scale(1.05); /* Slight scaling effect for correct answers */
+}
+
+/* Incorrect answer styling */
+.incorrect {
+  background: #eb1313; /* Red background for incorrect answers */
+  color: white;
+  font-weight: 500;
+  cursor: not-allowed; /* Prevent further clicks */
+  transform: scale(1.05); /* Slight scaling effect for incorrect answers */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .app {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .app h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .quiz h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+    margin: 10px 0;
+  }
+
+  #next-btn, #back-btn {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+#search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-button {
+  background: #001e4d;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background: #003070;
+}
